@@ -12,7 +12,7 @@ public class UniGuard extends JavaPlugin {
 
 	// external classes
 	public methods methods;
-
+	public Vars vars;
 	// Standard Necessary Vars
 	public PluginManager pm;
 	public PluginDescriptionFile pdFile;
@@ -24,11 +24,13 @@ public class UniGuard extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		methods = new methods(this);
-
+		vars = new Vars(this);
+		
 		methods.initDefVars();
 		methods.setCommands();
 
 		methods.setupPermissions();
+		
 		
 		
 		methods.sendEnabledMessage();
