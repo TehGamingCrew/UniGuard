@@ -2,10 +2,11 @@ package com.tehgamingcrew.bukkit.UniGuard;
 
 import java.util.logging.Logger;
 
+import net.milkbowl.vault.permission.Permission;
+
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
 
 public class UniGuard extends JavaPlugin {
 
@@ -17,6 +18,9 @@ public class UniGuard extends JavaPlugin {
 	public PluginDescriptionFile pdFile;
 	public Logger log;
 
+	// vault vars
+	public Permission permission;
+
 	@Override
 	public void onEnable() {
 		methods = new methods(this);
@@ -24,7 +28,9 @@ public class UniGuard extends JavaPlugin {
 		methods.initDefVars();
 		methods.setCommands();
 
-
+		methods.setupPermissions();
+		
+		
 		methods.sendEnabledMessage();
 	}
 

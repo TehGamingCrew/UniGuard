@@ -1,5 +1,9 @@
 package com.tehgamingcrew.bukkit.UniGuard;
 
+import net.milkbowl.vault.permission.Permission;
+
+import org.bukkit.plugin.RegisteredServiceProvider;
+
 
 
 public class methods {
@@ -38,5 +42,17 @@ public class methods {
 		// log message to console
 		public void logMessage(String msg) {
 			plugin.log.info(msg);
+		}
+		
+		
+		//set up permissions using vault
+		public boolean setupPermissions() {
+			RegisteredServiceProvider<Permission> permissionProvider = plugin.getServer()
+					.getServicesManager().getRegistration(
+							net.milkbowl.vault.permission.Permission.class);
+			if (permissionProvider != null) {
+				plugin.permission = permissionProvider.getProvider();
+			}
+			return (plugin.permission != null);
 		}
 }
