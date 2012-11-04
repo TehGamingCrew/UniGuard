@@ -1,0 +1,15 @@
+name: UniGuard
+version: 0.1
+main: com.tehgamingcrew.bukkit.UniGuard.UniGuard
+author: Jasper9041
+description: Specify which blocks can be placed in a certain worldguard region.
+permissions:
+    uniguard.use:
+        default: true
+        description: Allow a user to use UniGuard.
+commands:
+    uniguard:
+        description: Uniguard
+        permission: uniguard.reload
+        usage: Type /<command> help to see the commands.
+depend: [Vault]

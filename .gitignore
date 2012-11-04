@@ -1,0 +1,8 @@
+.settings
+.project
+.classpath
+bin
+craftbukkit.jar
+Vault.jar
+WorldEdit.jar
+WorldGuard.jar
