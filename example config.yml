@@ -1,0 +1,11 @@
+regions:
+    testregion:
+        build:
+            type: ALLOW
+            exceptions:
+                - 46
+        break:
+            type: DENY
+            exceptions:
+                - 4
+                - 98

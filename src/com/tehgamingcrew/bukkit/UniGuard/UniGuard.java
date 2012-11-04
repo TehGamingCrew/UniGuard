@@ -8,6 +8,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
+
 public class UniGuard extends JavaPlugin {
 
 	// external classes
@@ -21,6 +23,9 @@ public class UniGuard extends JavaPlugin {
 	// vault vars
 	public Permission permission;
 
+	// worldguard
+	public WorldGuardPlugin worldguard;
+
 	@Override
 	public void onEnable() {
 		methods = new methods(this);
@@ -28,13 +33,15 @@ public class UniGuard extends JavaPlugin {
 		
 		methods.initDefVars();
 		methods.setCommands();
-		
+
 		methods.checkDependencies();
-		
+
 		methods.setupPermissions();
+
+		worldguard = methods.getWorldGuard();
 		
-		
-		
+		// Code
+
 		methods.sendEnabledMessage();
 	}
 

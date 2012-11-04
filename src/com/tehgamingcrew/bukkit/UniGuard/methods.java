@@ -2,7 +2,10 @@ package com.tehgamingcrew.bukkit.UniGuard;
 
 import net.milkbowl.vault.permission.Permission;
 
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
+
+import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 
 public class methods {
 
@@ -54,6 +57,7 @@ public class methods {
 		return (plugin.permission != null);
 	}
 
+	// dependencies checker
 	public void checkDependencies() {
 		// check WorldGuard
 		if (plugin.pm.getPlugin("WorldGuard") == null) {
@@ -73,5 +77,18 @@ public class methods {
 			logMessage("Vault not installed, Disabling UniGuard!");
 			return;
 		}
+	}
+
+	// load worldguard
+	public WorldGuardPlugin getWorldGuard() {
+		Plugin tmpplugin = plugin.getServer().getPluginManager()
+				.getPlugin("WorldGuard");
+
+		// WorldGuard may not be loaded
+		if (tmpplugin == null || !(tmpplugin instanceof WorldGuardPlugin)) {
+			return null;
+			// won't happen because of the dependencies checker.
+		}
+		return (WorldGuardPlugin) tmpplugin;
 	}
 }

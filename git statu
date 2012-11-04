@@ -1,0 +1,48 @@
+[33mcommit ec8769be822c37aabe3c8d3e8a2da11616262d86[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 22:28:28 2012 +0100
+
+    Add Dependancies Checker
+
+[33mcommit 3a0daa134a659a82fa9c902794574b74666b82e6[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 22:21:34 2012 +0100
+
+    Add vars
+
+[33mcommit b155c96b79d1b57034ffe937ae5d3114915966bd[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 22:09:59 2012 +0100
+
+    Added permissions
+
+[33mcommit 2436be21e202406944eb3308b7e2f802da6a804d[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 22:01:51 2012 +0100
+
+    add methods.java
+
+[33mcommit 89731293af612bfe5f1162a1df67b4b520070d18[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 22:01:10 2012 +0100
+
+    Basic standart stuff added
+
+[33mcommit b3b1475a203068484edfb8aac018dc4bdc0c467a[m
+Merge: ea052fd e33e6f3
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 21:52:08 2012 +0100
+
+    Merge branch 'master' of github.com:TehGamingCrew/UniGuard
+
+[33mcommit ea052fdfd075a0b7984213a045e0d5cfc64b6efc[m
+Author: Jasper9041 <Jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 21:45:34 2012 +0100
+
+    initialize git
+
+[33mcommit e33e6f3fad4a20b36fb13db203f187e79d413cb2[m
+Author: Jasper9041 <jasper9041@tehgamingcrew.com>
+Date:   Sun Nov 4 12:31:23 2012 -0800
+
+    Initial commit
