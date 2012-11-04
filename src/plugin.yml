@@ -12,4 +12,4 @@ commands:
         description: Uniguard
         permission: uniguard.reload
         usage: Type /<command> help to see the commands.
-depend: [Vault]
+depend: [Vault, WorldEdit, WorldGuard]

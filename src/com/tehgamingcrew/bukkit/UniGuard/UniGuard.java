@@ -28,7 +28,9 @@ public class UniGuard extends JavaPlugin {
 		
 		methods.initDefVars();
 		methods.setCommands();
-
+		
+		methods.checkDependencies();
+		
 		methods.setupPermissions();
 		
 		
