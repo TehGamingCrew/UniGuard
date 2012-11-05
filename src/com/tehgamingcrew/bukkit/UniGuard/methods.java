@@ -2,6 +2,8 @@ package com.tehgamingcrew.bukkit.UniGuard;
 
 import net.milkbowl.vault.permission.Permission;
 
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
@@ -90,5 +92,10 @@ public class methods {
 			// won't happen because of the dependencies checker.
 		}
 		return (WorldGuardPlugin) tmpplugin;
+	}
+	
+	//send no permission message
+	public void noPermission(Player p){
+		p.sendMessage(ChatColor.RED + "You have no permission for that!");
 	}
 }

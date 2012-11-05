@@ -20,6 +20,11 @@ public class UniGuard extends JavaPlugin {
 	public PluginDescriptionFile pdFile;
 	public Logger log;
 
+	// command executors
+
+	// listeners
+	public blockListeners blocklistener;
+
 	// vault vars
 	public Permission permission;
 
@@ -30,7 +35,7 @@ public class UniGuard extends JavaPlugin {
 	public void onEnable() {
 		methods = new methods(this);
 		vars = new Vars(this);
-		
+
 		methods.initDefVars();
 		methods.setCommands();
 
@@ -39,7 +44,9 @@ public class UniGuard extends JavaPlugin {
 		methods.setupPermissions();
 
 		worldguard = methods.getWorldGuard();
-		
+
+		pm.registerEvents(blocklistener, this);
+
 		// Code
 
 		methods.sendEnabledMessage();

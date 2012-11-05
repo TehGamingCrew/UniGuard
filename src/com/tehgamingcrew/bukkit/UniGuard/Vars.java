@@ -10,6 +10,8 @@ public class Vars {
 		plugin = pluginInstance;
 	}
 	
+	//permissions
 	public String usePerm = "uniguard.use";
+	public String adminPerm = "uniguard.admin";
 }
 
