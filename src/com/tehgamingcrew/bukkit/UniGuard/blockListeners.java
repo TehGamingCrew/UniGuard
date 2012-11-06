@@ -20,7 +20,9 @@ public class blockListeners implements Listener {
 		if (plugin.permission.has(player, plugin.vars.usePerm)
 				|| plugin.permission.has(player, plugin.vars.adminPerm)) {
 			if (!plugin.permission.has(player, plugin.vars.adminPerm)) {
-				
+
+				// code
+
 			} else {
 				// do nothing, player has full acces
 			}
