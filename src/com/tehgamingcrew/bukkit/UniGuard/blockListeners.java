@@ -26,6 +26,7 @@ public class blockListeners implements Listener {
 			}
 		} else {
 			// no permission
+			event.setCancelled(true);
 			plugin.methods.noPermission(player);
 		}
 	}
